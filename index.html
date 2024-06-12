@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">ShoesShop</div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-text">
+          <h1>Find The Best Fashion Style For You</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            et enim vitae mauris vehicula suscipit.
+          </p>
+          <button onclick="openModal()">Shop Now</button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://img.freepik.com/free-photo/black-woman-trendy-grey-leather-jacket-posing-beige-background-studio-winter-autumn-fashion-look_273443-141.jpg"
+            alt="Fashion Image"
+          />
+        </div>
+      </section>
+
+      <section id="new-collection">
+        <h2
+          style="text-align: center; margin-top: 40px; size: 30px"
+          id="products"
+        >
+          New Collection
+        </h2>
+        <div class="tabs">
+          <button class="tab-link active" onclick="openTab(event, 'all')">
+            All
+          </button>
+          <button class="tab-link" onclick="openTab(event, 'category1')">
+            Category 1
+          </button>
+          <button class="tab-link" onclick="openTab(event, 'category2')">
+            Category 2
+          </button>
+        </div>
+        <div id="all" class="tab-content active">
+          <div class="product-grid">
+            <div class="product-card">
+              <img
+                src="https://img.freepik.com/free-photo/parisian-lady-beret-trench-sings-microphone-stylish-brunette-long-skirt-light-autumn-coat-posing-camera_197531-18693.jpg"
+                alt="Product 1"
+              />
+              <h3>Product 1</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://img.freepik.com/premium-photo/trendy-woman-floral-dress_251859-15432.jpg"
+                alt="Product 2"
+              />
+              <h3>Product 2</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://www.shutterstock.com/image-photo/fashionable-confident-woman-wearing-elegant-600nw-2256187303.jpg"
+                alt="Product 3"
+              />
+              <h3>Product 3</h3>
+            </div>
+          </div>
+        </div>
+        <div id="category1" class="tab-content">
+          <div class="product-grid">
+            <div class="product-card">
+              <img
+                src="https://www.shutterstock.com/image-photo/beautiful-sexy-brunette-woman-tanned-600nw-1713739630.jpg"
+                alt="Category 1 Product 1"
+              />
+              <h3>Category 1 Product 1</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://st4.depositphotos.com/12985790/20643/i/450/depositphotos_206432966-stock-photo-attractive-fashionable-woman-posing-white.jpg"
+                alt="Category 1 Product 2"
+              />
+              <h3>Category 1 Product 2</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://www.shutterstock.com/image-photo/fashion-beautiful-model-sexy-pretty-600nw-1950573727.jpg"
+                alt="Category 1 Product 3"
+              />
+              <h3>Category 1 Product 3</h3>
+            </div>
+          </div>
+        </div>
+        <div id="category2" class="tab-content">
+          <div class="product-grid">
+            <div class="product-card">
+              <img
+                src="https://st3.depositphotos.com/12985790/19243/i/450/depositphotos_192430092-stock-photo-beautiful-stylish-blonde-woman-white.jpg"
+                alt="Category 2 Product 1"
+              />
+              <h3>Category 2 Product 1</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://st3.depositphotos.com/12985790/17426/i/450/depositphotos_174268178-stock-photo-beautiful-elegant-businesswoman-in-light.jpg"
+                alt="Category 2 Product 2"
+              />
+              <h3>Category 2 Product 2</h3>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://st3.depositphotos.com/12985790/19243/i/450/depositphotos_192430092-stock-photo-beautiful-stylish-blonde-woman-white.jpg"
+                alt="Category 2 Product 3"
+              />
+              <h3>Category 2 Product 3</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 style="text-align: center; margin-top: 40px">
+          Best Fashion Since 2014
+        </h2>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+          enim vitae mauris vehicula suscipit.
+        </p>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Milestone 1"
+              />
+              <h3>2014</h3>
+              <p>Started</p>
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Milestone 2"
+              />
+              <h3>8700+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Milestone 3"
+              />
+              <h3>3105+</h3>
+              <p>Products Sold</p>
+            </div>
+          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 ShoesShop. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Welcome to our store! Check out our latest collections.</p>
+      </div>
+    </div>
+  </body>
+</html>
